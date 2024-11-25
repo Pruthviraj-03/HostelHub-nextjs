@@ -2,7 +2,8 @@ import mongoose from "mongoose";
 
 const dbConnect = async () => {
   try {
-    const mongoURI = process.env.MONGO_URI;
+    const mongoURI = process.env.MONGODB_URL;
+    console.log("Mongo URI:", mongoURI);
 
     if (mongoose.connection.readyState >= 1) {
       console.log("MongoDB connection already established");
@@ -12,8 +13,6 @@ const dbConnect = async () => {
     await mongoose.connect(mongoURI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useFindAndModify: false,
-      useCreateIndex: true,
     });
 
     console.log("MongoDB connected successfully");
@@ -23,4 +22,4 @@ const dbConnect = async () => {
   }
 };
 
-export default dbConnect;
+export { dbConnect };

@@ -1,13 +1,12 @@
 import { GraphQLObjectType, GraphQLID, GraphQLString } from "graphql";
 
 const HostelType = new GraphQLObjectType({
-  name: "Hostel",
-  fields: {
+  name: "HostelType",
+  fields: () => ({
     id: { type: GraphQLID },
     name: { type: GraphQLString },
-    description: { type: GraphQLString },
-    locationId: { type: GraphQLID },
-  },
+    image: { type: GraphQLString },
+  }),
 });
 
 export default HostelType;

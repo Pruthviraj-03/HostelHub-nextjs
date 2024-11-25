@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
+import logo from "../images/hero.jpg";
 
 const Hero = () => {
   return (
@@ -9,9 +11,15 @@ const Hero = () => {
       style={{ height: "80vh" }}
     >
       <div className="bg-gray-900 w-full flex justify-center items-center">
-        <img
+        {/* <img
           src="/images/hero.jpg"
           alt="books"
+          style={{ height: "70%", width: "60%", objectFit: "cover" }}
+          className="rounded-lg rotateImg"
+        /> */}
+        <Image
+          src={logo}
+          alt="Finifi Logo"
           style={{ height: "70%", width: "60%", objectFit: "cover" }}
           className="rounded-lg rotateImg"
         />

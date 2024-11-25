@@ -21,31 +21,29 @@ const Footer = () => {
         </span>
 
         <p className="font-nunito py-2 text-gray-800 mobile:text-sm">
-          All rights reserved @
-          <Link href="https://github.com/Pruthviraj-03/">
-            <a target="_blank" className="text-gray-800 hover:text-gray-500">
-              GitHub
-            </a>
-          </Link>
+          All rights reserved @https://github.com/Pruthviraj-03
         </p>
 
         <div className="flex -mx-2">
-          <Link href="#">
-            <a className="mx-2 text-lg text-gray-800 hover:text-gray-500">
-              <FaFacebookF />
-            </a>
+          <Link
+            href="#"
+            className="mx-2 text-lg text-gray-800 hover:text-gray-500"
+          >
+            <FaFacebookF />
           </Link>
 
-          <Link href="#">
-            <a className="mx-2 text-lg text-gray-800 hover:text-gray-500">
-              <BsGithub />
-            </a>
+          <Link
+            href="#"
+            className="mx-2 text-lg text-gray-800 hover:text-gray-500"
+          >
+            <BsGithub />
           </Link>
 
-          <Link href="#">
-            <a className="mx-2 text-lg text-gray-800 hover:text-gray-500">
-              <BsTwitter />
-            </a>
+          <Link
+            href="#"
+            className="mx-2 text-lg text-gray-800 hover:text-gray-500"
+          >
+            <BsTwitter />
           </Link>
         </div>
       </div>
